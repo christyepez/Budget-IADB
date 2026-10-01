@@ -11,3 +11,7 @@ data/*.xlsx
 data/*.xls
 data/*.csv
 !data/.gitkeep
+
+# Power BI local cache
+powerbi/**/.pbi/
+_reportfix/
