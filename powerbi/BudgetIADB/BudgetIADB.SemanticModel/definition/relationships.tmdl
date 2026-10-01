@@ -1,5 +1,4 @@
 relationship Encumbrance_POLine
-	crossFilteringBehavior: bothDirections
 	fromColumn: Encumbrance.POLineKey
 	toColumn: DimPOLine.POLineKey
 

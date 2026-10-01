@@ -17,3 +17,5 @@ ref table Expenses
 ref table DimPOLine
 ref table BudgetMeasures
 
+ref cultureInfo en-US
+

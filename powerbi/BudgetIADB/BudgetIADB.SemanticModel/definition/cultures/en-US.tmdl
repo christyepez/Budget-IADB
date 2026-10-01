@@ -1,0 +1,410 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "budgetmeasures.available_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Available Amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Available Amount": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetmeasures.encumbrance_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Encumbrance Amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Encumbrance Amount": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetmeasures.spend_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Spend %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Spend %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetmeasures.expense_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Expense Amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Expense Amount": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetmeasures.voucher_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Voucher Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Voucher Count": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.po_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "PO_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PO_ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.line_nbr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "LINE_NBR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LINE_NBR": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.name1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "NAME1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NAME1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "DESCRIPTION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DESCRIPTION": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.merchandise_amt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "MERCHANDISE_AMT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "MERCHANDISE_AMT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.po_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "PO_STATUS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PO_STATUS": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimpoline.line_nbr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimPOLine",
+			          "ConceptualProperty": "LINE_NBR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LINE_NBR": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimpoline.po_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimPOLine",
+			          "ConceptualProperty": "PO_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PO_ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "expenses.po_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "PO_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PO_ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "expenses.line_nbr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "LINE_NBR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LINE_NBR": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "expenses.vendor_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "VENDOR_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "VENDOR_ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "expenses.voucher_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "VOUCHER_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "VOUCHER_ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "expenses.invoice_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "INVOICE_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "INVOICE_ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "expenses.merchandise_amt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "MERCHANDISE_AMT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "MERCHANDISE_AMT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

@@ -1,12 +1,12 @@
 {
-    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-    "name":  "status_slicer",
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+    "name":  "vendor_slicer",
     "position":  {
-                     "x":  290,
+                     "x":  560,
                      "y":  70,
                      "z":  0,
+                     "width":  300,
                      "height":  65,
-                     "width":  250,
                      "tabOrder":  0
                  },
     "visual":  {
@@ -23,46 +23,17 @@
                                                                                                                                                              "Entity":  "Encumbrance"
                                                                                                                                                          }
                                                                                                                                        },
-                                                                                                                        "Property":  "PO_STATUS"
+                                                                                                                        "Property":  "NAME1"
                                                                                                                     }
                                                                                                      },
-                                                                                           "queryRef":  "Encumbrance.PO_STATUS",
-                                                                                           "nativeQueryRef":  "PO_STATUS",
-                                                                                           "active":  true,
-                                                                                           "displayName":  "PO_STATUS"
+                                                                                           "queryRef":  "Encumbrance.NAME1",
+                                                                                           "nativeQueryRef":  "NAME1",
+                                                                                           "displayName":  "NAME1"
                                                                                        }
                                                                                    ]
                                                                }
                                                 }
                              },
-                   "objects":  {
-                                   "data":  [
-                                                {
-                                                    "properties":  {
-                                                                       "mode":  {
-                                                                                    "expr":  {
-                                                                                                 "Literal":  {
-                                                                                                                 "Value":  "\u0027Dropdown\u0027"
-                                                                                                             }
-                                                                                             }
-                                                                                }
-                                                                   }
-                                                }
-                                            ],
-                                   "header":  [
-                                                  {
-                                                      "properties":  {
-                                                                         "show":  {
-                                                                                      "expr":  {
-                                                                                                   "Literal":  {
-                                                                                                                   "Value":  "false"
-                                                                                                               }
-                                                                                               }
-                                                                                  }
-                                                                     }
-                                                  }
-                                              ]
-                               },
                    "visualContainerObjects":  {
                                                   "title":  [
                                                                 {
@@ -70,7 +41,7 @@
                                                                                        "text":  {
                                                                                                     "expr":  {
                                                                                                                  "Literal":  {
-                                                                                                                                 "Value":  "\u0027PO Status\u0027"
+                                                                                                                                 "Value":  "\u0027Vendor\u0027"
                                                                                                                              }
                                                                                                              }
                                                                                                 },
@@ -85,5 +56,10 @@
                                                                 }
                                                             ]
                                               }
-               }
+               },
+    "filterConfig":  {
+                         "filters":  [
+
+                                     ]
+                     }
 }
