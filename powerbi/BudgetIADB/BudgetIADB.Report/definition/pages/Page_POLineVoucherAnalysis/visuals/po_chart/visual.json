@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "po_chart",
+  "position": {
+    "x": 20,
+    "y": 345,
+    "z": 0,
+    "height": 255,
+    "width": 680,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimPOLine"
+                    }
+                  },
+                  "Property": "PO_ID"
+                }
+              },
+              "queryRef": "DimPOLine.PO_ID",
+              "nativeQueryRef": "PO_ID",
+              "active": true,
+              "displayName": "PO_ID"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Encumbrance Amount"
+                }
+              },
+              "queryRef": "BudgetMeasures.Encumbrance Amount",
+              "nativeQueryRef": "Encumbrance Amount",
+              "displayName": "Encumbrance Amount"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Expense Amount"
+                }
+              },
+              "queryRef": "BudgetMeasures.Expense Amount",
+              "nativeQueryRef": "Expense Amount",
+              "displayName": "Expense Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Encumbrance vs Expense by PO'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

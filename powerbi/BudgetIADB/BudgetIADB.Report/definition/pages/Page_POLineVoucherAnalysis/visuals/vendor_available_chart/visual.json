@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "vendor_available_chart",
+  "position": {
+    "x": 20,
+    "y": 620,
+    "z": 0,
+    "height": 235,
+    "width": 680,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Encumbrance"
+                    }
+                  },
+                  "Property": "NAME1"
+                }
+              },
+              "queryRef": "Encumbrance.NAME1",
+              "nativeQueryRef": "NAME1",
+              "active": true,
+              "displayName": "Vendor"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Available Amount"
+                }
+              },
+              "queryRef": "BudgetMeasures.Available Amount",
+              "nativeQueryRef": "Available Amount",
+              "displayName": "Available Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Available by Vendor'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

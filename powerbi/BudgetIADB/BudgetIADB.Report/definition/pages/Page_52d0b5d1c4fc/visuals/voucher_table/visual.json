@@ -1,135 +1,135 @@
 {
-    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-    "name":  "voucher_table",
-    "position":  {
-                     "x":  20,
-                     "y":  630,
-                     "z":  0,
-                     "height":  250,
-                     "width":  680,
-                     "tabOrder":  0
-                 },
-    "visual":  {
-                   "visualType":  "table",
-                   "query":  {
-                                 "queryState":  {
-                                                    "Values":  {
-                                                                   "projections":  [
-                                                                                       {
-                                                                                           "field":  {
-                                                                                                         "Column":  {
-                                                                                                                        "Expression":  {
-                                                                                                                                           "SourceRef":  {
-                                                                                                                                                             "Entity":  "Expenses"
-                                                                                                                                                         }
-                                                                                                                                       },
-                                                                                                                        "Property":  "PO_ID"
-                                                                                                                    }
-                                                                                                     },
-                                                                                           "queryRef":  "Expenses.PO_ID",
-                                                                                           "nativeQueryRef":  "PO_ID",
-                                                                                           "displayName":  "PO_ID"
-                                                                                       },
-                                                                                       {
-                                                                                           "field":  {
-                                                                                                         "Column":  {
-                                                                                                                        "Expression":  {
-                                                                                                                                           "SourceRef":  {
-                                                                                                                                                             "Entity":  "Expenses"
-                                                                                                                                                         }
-                                                                                                                                       },
-                                                                                                                        "Property":  "LINE_NBR"
-                                                                                                                    }
-                                                                                                     },
-                                                                                           "queryRef":  "Expenses.LINE_NBR",
-                                                                                           "nativeQueryRef":  "LINE_NBR",
-                                                                                           "displayName":  "LINE_NBR"
-                                                                                       },
-                                                                                       {
-                                                                                           "field":  {
-                                                                                                         "Column":  {
-                                                                                                                        "Expression":  {
-                                                                                                                                           "SourceRef":  {
-                                                                                                                                                             "Entity":  "Expenses"
-                                                                                                                                                         }
-                                                                                                                                       },
-                                                                                                                        "Property":  "VENDOR_ID"
-                                                                                                                    }
-                                                                                                     },
-                                                                                           "queryRef":  "Expenses.VENDOR_ID",
-                                                                                           "nativeQueryRef":  "VENDOR_ID",
-                                                                                           "displayName":  "VENDOR_ID"
-                                                                                       },
-                                                                                       {
-                                                                                           "field":  {
-                                                                                                         "Column":  {
-                                                                                                                        "Expression":  {
-                                                                                                                                           "SourceRef":  {
-                                                                                                                                                             "Entity":  "Expenses"
-                                                                                                                                                         }
-                                                                                                                                       },
-                                                                                                                        "Property":  "VOUCHER_ID"
-                                                                                                                    }
-                                                                                                     },
-                                                                                           "queryRef":  "Expenses.VOUCHER_ID",
-                                                                                           "nativeQueryRef":  "VOUCHER_ID",
-                                                                                           "displayName":  "VOUCHER_ID"
-                                                                                       },
-                                                                                       {
-                                                                                           "field":  {
-                                                                                                         "Column":  {
-                                                                                                                        "Expression":  {
-                                                                                                                                           "SourceRef":  {
-                                                                                                                                                             "Entity":  "Expenses"
-                                                                                                                                                         }
-                                                                                                                                       },
-                                                                                                                        "Property":  "INVOICE_ID"
-                                                                                                                    }
-                                                                                                     },
-                                                                                           "queryRef":  "Expenses.INVOICE_ID",
-                                                                                           "nativeQueryRef":  "INVOICE_ID",
-                                                                                           "displayName":  "INVOICE_ID"
-                                                                                       },
-                                                                                       {
-                                                                                           "field":  {
-                                                                                                         "Column":  {
-                                                                                                                        "Expression":  {
-                                                                                                                                           "SourceRef":  {
-                                                                                                                                                             "Entity":  "Expenses"
-                                                                                                                                                         }
-                                                                                                                                       },
-                                                                                                                        "Property":  "MERCHANDISE_AMT"
-                                                                                                                    }
-                                                                                                     },
-                                                                                           "queryRef":  "Expenses.MERCHANDISE_AMT",
-                                                                                           "nativeQueryRef":  "MERCHANDISE_AMT",
-                                                                                           "displayName":  "MERCHANDISE_AMT"
-                                                                                       }
-                                                                                   ]
-                                                               }
-                                                }
-                             },
-                   "visualContainerObjects":  {
-                                                  "title":  [
-                                                                {
-                                                                    "properties":  {
-                                                                                       "text":  {
-                                                                                                    "expr":  {
-                                                                                                                 "Literal":  {
-                                                                                                                                 "Value":  "\u0027Voucher / Expense Detail\u0027"
-                                                                                                                             }
-                                                                                                             }
-                                                                                                },
-                                                                                       "show":  {
-                                                                                                    "expr":  {
-                                                                                                                 "Literal":  {
-                                                                                                                                 "Value":  "true"
-                                                                                                                             }
-                                                                                                             }
-                                                                                                }
-                                                                                   }
-                                                                }
-                                                            ]
-                                              }
-               }
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "voucher_table",
+  "position": {
+    "x": 20,
+    "y": 630,
+    "z": 0,
+    "height": 250,
+    "width": 680,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "table",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expenses"
+                    }
+                  },
+                  "Property": "PO_ID"
+                }
+              },
+              "queryRef": "Expenses.PO_ID",
+              "nativeQueryRef": "PO_ID",
+              "displayName": "PO_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expenses"
+                    }
+                  },
+                  "Property": "LINE_NBR"
+                }
+              },
+              "queryRef": "Expenses.LINE_NBR",
+              "nativeQueryRef": "LINE_NBR",
+              "displayName": "LINE_NBR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expenses"
+                    }
+                  },
+                  "Property": "VENDOR_ID"
+                }
+              },
+              "queryRef": "Expenses.VENDOR_ID",
+              "nativeQueryRef": "VENDOR_ID",
+              "displayName": "VENDOR_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expenses"
+                    }
+                  },
+                  "Property": "VOUCHER_ID"
+                }
+              },
+              "queryRef": "Expenses.VOUCHER_ID",
+              "nativeQueryRef": "VOUCHER_ID",
+              "displayName": "VOUCHER_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expenses"
+                    }
+                  },
+                  "Property": "INVOICE_ID"
+                }
+              },
+              "queryRef": "Expenses.INVOICE_ID",
+              "nativeQueryRef": "INVOICE_ID",
+              "displayName": "INVOICE_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expenses"
+                    }
+                  },
+                  "Property": "MERCHANDISE_AMT"
+                }
+              },
+              "queryRef": "Expenses.MERCHANDISE_AMT",
+              "nativeQueryRef": "MERCHANDISE_AMT",
+              "displayName": "MERCHANDISE_AMT"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Voucher / Expense Detail'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
 }

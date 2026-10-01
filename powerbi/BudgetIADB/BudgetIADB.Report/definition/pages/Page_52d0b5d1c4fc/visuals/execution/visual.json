@@ -1,60 +1,97 @@
 {
-    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-    "name":  "execution",
-    "position":  {
-                     "x":  20,
-                     "y":  155,
-                     "z":  0,
-                     "height":  180,
-                     "width":  360,
-                     "tabOrder":  0
-                 },
-    "visual":  {
-                   "visualType":  "card",
-                   "query":  {
-                                 "queryState":  {
-                                                    "Values":  {
-                                                                   "projections":  [
-                                                                                       {
-                                                                                           "field":  {
-                                                                                                         "Measure":  {
-                                                                                                                         "Expression":  {
-                                                                                                                                            "SourceRef":  {
-                                                                                                                                                              "Entity":  "BudgetMeasures"
-                                                                                                                                                          }
-                                                                                                                                        },
-                                                                                                                         "Property":  "Spend %"
-                                                                                                                     }
-                                                                                                     },
-                                                                                           "queryRef":  "BudgetMeasures.Spend %",
-                                                                                           "nativeQueryRef":  "Spend %",
-                                                                                           "displayName":  "Spend %"
-                                                                                       }
-                                                                                   ]
-                                                               }
-                                                }
-                             },
-                   "visualContainerObjects":  {
-                                                  "title":  [
-                                                                {
-                                                                    "properties":  {
-                                                                                       "text":  {
-                                                                                                    "expr":  {
-                                                                                                                 "Literal":  {
-                                                                                                                                 "Value":  "\u0027Execution\u0027"
-                                                                                                                             }
-                                                                                                             }
-                                                                                                },
-                                                                                       "show":  {
-                                                                                                    "expr":  {
-                                                                                                                 "Literal":  {
-                                                                                                                                 "Value":  "true"
-                                                                                                                             }
-                                                                                                             }
-                                                                                                }
-                                                                                   }
-                                                                }
-                                                            ]
-                                              }
-               }
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "execution",
+  "position": {
+    "x": 20,
+    "y": 155,
+    "z": 0,
+    "height": 180,
+    "width": 360,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "gauge",
+    "query": {
+      "queryState": {
+        "TargetValue": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Spend %"
+                }
+              },
+              "queryRef": "BudgetMeasures.Spend %",
+              "nativeQueryRef": "Spend %",
+              "displayName": "Spend %"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Spend %"
+                }
+              },
+              "queryRef": "BudgetMeasures.Spend %",
+              "nativeQueryRef": "Spend %",
+              "displayName": "Spend %"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "BudgetMeasures"
+                  }
+                },
+                "Property": "Spend %"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Execution'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
 }

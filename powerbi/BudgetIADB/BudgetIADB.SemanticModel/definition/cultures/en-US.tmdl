@@ -170,6 +170,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Vendor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -226,6 +236,16 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "PO_STATUS": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "PO Status": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -394,6 +414,90 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "MERCHANDISE_AMT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetmeasures.po_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "PO Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PO Count": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.budget_dt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "BUDGET_DT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "BUDGET_DT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.business_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "BUSINESS_UNIT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "BUSINESS_UNIT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetmeasures.overspent_po_lines": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Overspent PO Lines"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Overspent PO Lines": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
