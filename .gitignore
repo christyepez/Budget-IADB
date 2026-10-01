@@ -1,0 +1,13 @@
+# Power BI temporary/local files
+*.pbit.lock
+*.pbix.lock
+*.tmp
+~$*
+.DS_Store
+Thumbs.db
+
+# Local copies of data sources
+data/*.xlsx
+data/*.xls
+data/*.csv
+!data/.gitkeep

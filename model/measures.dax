@@ -1,0 +1,33 @@
+-- Budget / encumbrance
+Encumbrance Amount :=
+SUM ( Encumbrance[MERCHANDISE_AMT] )
+
+-- Actual voucher spending
+Expense Amount :=
+SUM ( Expenses[MERCHANDISE_AMT] )
+
+-- Available at the active filter grain.
+Available Amount :=
+[Encumbrance Amount] - [Expense Amount]
+
+-- PO total, retaining current PO and external slicers while removing only line grain.
+Available PO Total :=
+CALCULATE (
+    [Available Amount],
+    REMOVEFILTERS ( DimPOLine[LINE_NBR], DimPOLine[POLineKey] )
+)
+
+-- Current PO line available.
+Available PO Line :=
+[Available Amount]
+
+-- Count vouchers / transactions
+Voucher Count :=
+DISTINCTCOUNT ( Expenses[VOUCHER_ID] )
+
+-- Reconciliation
+Spend % :=
+DIVIDE ( [Expense Amount], [Encumbrance Amount] )
+
+Has Overspend :=
+IF ( [Available Amount] < 0, 1, 0 )
