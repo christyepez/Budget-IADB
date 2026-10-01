@@ -25,24 +25,45 @@ table DimPOLine
 		summarizeBy: none
 		sourceColumn: LINE_NBR
 
+	column VENDOR_ID
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+	column NAME1
+		dataType: string
+		summarizeBy: none
+		sourceColumn: NAME1
+
+	column DESCRIPTION
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DESCRIPTION
+
+	column PO_STATUS
+		dataType: string
+		summarizeBy: none
+		sourceColumn: PO_STATUS
+
+	column BUDGET_DT
+		dataType: dateTime
+		formatString: Short Date
+		summarizeBy: none
+		sourceColumn: BUDGET_DT
+
 	partition DimPOLine = m
 		mode: import
 		source =
 				let
-					SourcePath = "C:\Users\chris\OneDrive\Paneles\Budget_PowerBI.xlsx",
-					Workbook = Excel.Workbook(File.Contents(SourcePath), null, true),
-					EncRaw = Workbook{[Item="Encumbrance",Kind="Sheet"]}[Data],
-					EncHeaders = Table.PromoteHeaders(EncRaw, [PromoteAllScalars=true]),
-					EncSelected = Table.SelectColumns(EncHeaders, {"BUSINESS_UNIT","PO_ID","LINE_NBR"}),
-					ExpRaw = Workbook{[Item="Expenses",Kind="Sheet"]}[Data],
-					ExpHeaders = Table.PromoteHeaders(ExpRaw, [PromoteAllScalars=true]),
-					ExpSelected = Table.SelectColumns(ExpHeaders, {"BUSINESS_UNIT","PO_ID","LINE_NBR"}),
-					Combined = Table.Combine({EncSelected, ExpSelected}),
-					NonBlank = Table.SelectRows(Combined, each [PO_ID] <> null and Text.Trim(Text.From([PO_ID])) <> "" and [LINE_NBR] <> null),
-					Typed = Table.TransformColumnTypes(NonBlank, {{"BUSINESS_UNIT", type text},{"PO_ID", type text},{"LINE_NBR", Int64.Type}}),
+					SourceUrl = "https://d.docs.live.net/eb1a13bb642143af/Paneles/Budget_PowerBI.xlsx",
+					Workbook = Excel.Workbook(Web.Contents(SourceUrl), null, true),
+					Raw = Workbook{[Item="Encumbrance",Kind="Sheet"]}[Data],
+					Headers = Table.PromoteHeaders(Raw, [PromoteAllScalars=true]),
+					Selected = Table.SelectColumns(Headers, {"BUSINESS_UNIT","PO_ID","LINE_NBR","VENDOR_ID","NAME1","DESCRIPTION","PO_STATUS","BUDGET_DT"}),
+					NonBlank = Table.SelectRows(Selected, each [PO_ID] <> null and Text.Trim(Text.From([PO_ID])) <> "" and [LINE_NBR] <> null),
+					Typed = Table.TransformColumnTypes(NonBlank, {{"BUSINESS_UNIT", type text},{"PO_ID", type text},{"LINE_NBR", Int64.Type},{"VENDOR_ID", Int64.Type},{"NAME1", type text},{"DESCRIPTION", type text},{"PO_STATUS", type text},{"BUDGET_DT", type datetime}}),
 					Normalized = Table.TransformColumns(Typed, {{"BUSINESS_UNIT", each Text.Trim(Text.From(_)), type text},{"PO_ID", each Text.PadStart(Text.Trim(Text.From(_)),10,"0"), type text}}),
 					AddKey = Table.AddColumn(Normalized, "POLineKey", each [BUSINESS_UNIT] & "|" & [PO_ID] & "|" & Text.PadStart(Text.From([LINE_NBR]),6,"0"), type text),
 					DistinctRows = Table.Distinct(AddKey, {"POLineKey"})
 				in
 					DistinctRows
-

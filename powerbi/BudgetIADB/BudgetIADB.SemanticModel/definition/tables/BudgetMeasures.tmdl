@@ -25,6 +25,12 @@ table BudgetMeasures
 		formatString: $#,##0.00
 		lineageTag: 5109a6d4-573c-4aae-abc6-b4a827f386d9
 
+	measure 'PO Count' = COUNTROWS(VALUES(DimPOLine[PO_ID]))
+		formatString: #,##0
+
+	measure 'Overspent PO Lines' = COUNTROWS(FILTER(VALUES(DimPOLine[POLineKey]), [Available Amount] < 0))
+		formatString: #,##0
+
 	column Dummy
 		dataType: int64
 		isHidden

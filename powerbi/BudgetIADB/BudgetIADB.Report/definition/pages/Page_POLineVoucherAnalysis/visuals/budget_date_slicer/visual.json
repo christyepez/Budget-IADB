@@ -1,0 +1,65 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+    "name":  "budget_date_slicer",
+    "position":  {
+                     "x":  1140,
+                     "y":  70,
+                     "z":  0,
+                     "width":  280,
+                     "height":  65,
+                     "tabOrder":  0
+                 },
+    "visual":  {
+                   "visualType":  "slicer",
+                   "query":  {
+                                 "queryState":  {
+                                                    "Values":  {
+                                                                   "projections":  [
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Column":  {
+                                                                                                                        "Expression":  {
+                                                                                                                                           "SourceRef":  {
+                                                                                                                                                             "Entity":  "DimPOLine"
+                                                                                                                                                         }
+                                                                                                                                       },
+                                                                                                                        "Property":  "BUDGET_DT"
+                                                                                                                    }
+                                                                                                     },
+                                                                                           "queryRef":  "DimPOLine.BUDGET_DT",
+                                                                                           "nativeQueryRef":  "BUDGET_DT",
+                                                                                           "displayName":  "BUDGET_DT"
+                                                                                       }
+                                                                                   ]
+                                                               }
+                                                }
+                             },
+                   "visualContainerObjects":  {
+                                                  "title":  [
+                                                                {
+                                                                    "properties":  {
+                                                                                       "text":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "\u0027Budget Date\u0027"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                },
+                                                                                       "show":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "true"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                }
+                                                                                   }
+                                                                }
+                                                            ]
+                                              }
+               },
+    "filterConfig":  {
+                         "filters":  [
+
+                                     ]
+                     }
+}

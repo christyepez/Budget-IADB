@@ -1,0 +1,60 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+    "name":  "expense",
+    "position":  {
+                     "x":  700,
+                     "y":  155,
+                     "z":  0,
+                     "height":  170,
+                     "width":  170,
+                     "tabOrder":  0
+                 },
+    "visual":  {
+                   "visualType":  "card",
+                   "query":  {
+                                 "queryState":  {
+                                                    "Values":  {
+                                                                   "projections":  [
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Measure":  {
+                                                                                                                         "Expression":  {
+                                                                                                                                            "SourceRef":  {
+                                                                                                                                                              "Entity":  "BudgetMeasures"
+                                                                                                                                                          }
+                                                                                                                                        },
+                                                                                                                         "Property":  "Expense Amount"
+                                                                                                                     }
+                                                                                                     },
+                                                                                           "queryRef":  "BudgetMeasures.Expense Amount",
+                                                                                           "nativeQueryRef":  "Expense Amount",
+                                                                                           "displayName":  "Expense Amount"
+                                                                                       }
+                                                                                   ]
+                                                               }
+                                                }
+                             },
+                   "visualContainerObjects":  {
+                                                  "title":  [
+                                                                {
+                                                                    "properties":  {
+                                                                                       "text":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "\u0027Expenses\u0027"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                },
+                                                                                       "show":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "true"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                }
+                                                                                   }
+                                                                }
+                                                            ]
+                                              }
+               }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "Page_POLineVoucherAnalysis",
+  "displayName": "PO Line & Voucher Analysis",
+  "displayOption": "FitToPage",
+  "height": 1180,
+  "width": 1440
+}

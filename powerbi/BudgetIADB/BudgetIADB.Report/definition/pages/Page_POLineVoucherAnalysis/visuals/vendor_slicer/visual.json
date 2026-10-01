@@ -1,0 +1,65 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+    "name":  "vendor_slicer",
+    "position":  {
+                     "x":  560,
+                     "y":  70,
+                     "z":  0,
+                     "width":  300,
+                     "height":  65,
+                     "tabOrder":  0
+                 },
+    "visual":  {
+                   "visualType":  "slicer",
+                   "query":  {
+                                 "queryState":  {
+                                                    "Values":  {
+                                                                   "projections":  [
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Column":  {
+                                                                                                                        "Expression":  {
+                                                                                                                                           "SourceRef":  {
+                                                                                                                                                             "Entity":  "DimPOLine"
+                                                                                                                                                         }
+                                                                                                                                       },
+                                                                                                                        "Property":  "NAME1"
+                                                                                                                    }
+                                                                                                     },
+                                                                                           "queryRef":  "DimPOLine.NAME1",
+                                                                                           "nativeQueryRef":  "NAME1",
+                                                                                           "displayName":  "NAME1"
+                                                                                       }
+                                                                                   ]
+                                                               }
+                                                }
+                             },
+                   "visualContainerObjects":  {
+                                                  "title":  [
+                                                                {
+                                                                    "properties":  {
+                                                                                       "text":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "\u0027Vendor\u0027"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                },
+                                                                                       "show":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "true"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                }
+                                                                                   }
+                                                                }
+                                                            ]
+                                              }
+               },
+    "filterConfig":  {
+                         "filters":  [
+
+                                     ]
+                     }
+}

@@ -88,8 +88,8 @@ table Expenses
 		mode: import
 		source =
 				let
-					SourcePath = "C:\Users\chris\OneDrive\Paneles\Budget_PowerBI.xlsx",
-					Workbook = Excel.Workbook(File.Contents(SourcePath), null, true),
+					SourceUrl = "https://d.docs.live.net/eb1a13bb642143af/Paneles/Budget_PowerBI.xlsx",
+					Workbook = Excel.Workbook(Web.Contents(SourceUrl), null, true),
 					Raw = Workbook{[Item="Expenses",Kind="Sheet"]}[Data],
 					Headers = Table.PromoteHeaders(Raw, [PromoteAllScalars=true]),
 					Selected = Table.SelectColumns(Headers, {"BUSINESS_UNIT","PO_ID","VENDOR_ID","LINE_NBR","INVOICE_ID","VOUCHER_ID","ENTRY_STATUS","INVOICE_DT","ACCOUNTING_DT","VOUCHER_LINE_NUM","MERCHANDISE_AMT","BUDGET_DT"}),

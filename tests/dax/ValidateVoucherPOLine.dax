@@ -1,0 +1,21 @@
+-- Voucher-to-PO-line validation
+EVALUATE
+CALCULATETABLE(
+    SUMMARIZECOLUMNS(
+        DimPOLine[PO_ID],
+        DimPOLine[LINE_NBR],
+        DimPOLine[NAME1],
+        DimPOLine[DESCRIPTION],
+        "Encumbrance", [Encumbrance Amount],
+        "Expense", [Expense Amount],
+        "Available", [Available Amount]
+    ),
+    Expenses[VOUCHER_ID] = "00011113"
+)
+
+-- Expected:
+-- PO_ID 0000004567
+-- LINE_NBR 2
+-- Encumbrance 12335.10
+-- Expense 2000.00
+-- Available 10335.10

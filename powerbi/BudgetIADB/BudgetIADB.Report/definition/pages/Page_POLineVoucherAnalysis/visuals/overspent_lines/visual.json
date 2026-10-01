@@ -1,0 +1,65 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+    "name":  "overspent_lines",
+    "position":  {
+                     "x":  1315,
+                     "y":  155,
+                     "z":  0,
+                     "width":  105,
+                     "height":  170,
+                     "tabOrder":  0
+                 },
+    "visual":  {
+                   "visualType":  "card",
+                   "query":  {
+                                 "queryState":  {
+                                                    "Values":  {
+                                                                   "projections":  [
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Measure":  {
+                                                                                                                         "Expression":  {
+                                                                                                                                            "SourceRef":  {
+                                                                                                                                                              "Entity":  "BudgetMeasures"
+                                                                                                                                                          }
+                                                                                                                                        },
+                                                                                                                         "Property":  "Overspent PO Lines"
+                                                                                                                     }
+                                                                                                     },
+                                                                                           "queryRef":  "BudgetMeasures.Overspent PO Lines",
+                                                                                           "nativeQueryRef":  "Overspent PO Lines",
+                                                                                           "displayName":  "Overspent PO Lines"
+                                                                                       }
+                                                                                   ]
+                                                               }
+                                                }
+                             },
+                   "visualContainerObjects":  {
+                                                  "title":  [
+                                                                {
+                                                                    "properties":  {
+                                                                                       "text":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "\u0027Overspent Lines\u0027"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                },
+                                                                                       "show":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "true"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                }
+                                                                                   }
+                                                                }
+                                                            ]
+                                              }
+               },
+    "filterConfig":  {
+                         "filters":  [
+
+                                     ]
+                     }
+}

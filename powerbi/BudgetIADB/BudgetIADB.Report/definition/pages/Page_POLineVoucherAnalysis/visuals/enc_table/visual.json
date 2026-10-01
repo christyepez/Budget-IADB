@@ -1,0 +1,150 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+    "name":  "enc_table",
+    "position":  {
+                     "x":  720,
+                     "y":  875,
+                     "z":  0,
+                     "height":  270,
+                     "width":  700,
+                     "tabOrder":  0
+                 },
+    "visual":  {
+                   "visualType":  "table",
+                   "query":  {
+                                 "queryState":  {
+                                                    "Values":  {
+                                                                   "projections":  [
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Column":  {
+                                                                                                                        "Expression":  {
+                                                                                                                                           "SourceRef":  {
+                                                                                                                                                             "Entity":  "DimPOLine"
+                                                                                                                                                         }
+                                                                                                                                       },
+                                                                                                                        "Property":  "PO_ID"
+                                                                                                                    }
+                                                                                                     },
+                                                                                           "queryRef":  "DimPOLine.PO_ID",
+                                                                                           "nativeQueryRef":  "PO_ID",
+                                                                                           "displayName":  "PO_ID"
+                                                                                       },
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Column":  {
+                                                                                                                        "Expression":  {
+                                                                                                                                           "SourceRef":  {
+                                                                                                                                                             "Entity":  "DimPOLine"
+                                                                                                                                                         }
+                                                                                                                                       },
+                                                                                                                        "Property":  "LINE_NBR"
+                                                                                                                    }
+                                                                                                     },
+                                                                                           "queryRef":  "DimPOLine.LINE_NBR",
+                                                                                           "nativeQueryRef":  "LINE_NBR",
+                                                                                           "displayName":  "LINE_NBR"
+                                                                                       },
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Column":  {
+                                                                                                                        "Expression":  {
+                                                                                                                                           "SourceRef":  {
+                                                                                                                                                             "Entity":  "DimPOLine"
+                                                                                                                                                         }
+                                                                                                                                       },
+                                                                                                                        "Property":  "NAME1"
+                                                                                                                    }
+                                                                                                     },
+                                                                                           "queryRef":  "DimPOLine.NAME1",
+                                                                                           "nativeQueryRef":  "NAME1",
+                                                                                           "displayName":  "Vendor"
+                                                                                       },
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Column":  {
+                                                                                                                        "Expression":  {
+                                                                                                                                           "SourceRef":  {
+                                                                                                                                                             "Entity":  "DimPOLine"
+                                                                                                                                                         }
+                                                                                                                                       },
+                                                                                                                        "Property":  "DESCRIPTION"
+                                                                                                                    }
+                                                                                                     },
+                                                                                           "queryRef":  "DimPOLine.DESCRIPTION",
+                                                                                           "nativeQueryRef":  "DESCRIPTION",
+                                                                                           "displayName":  "Description"
+                                                                                       },
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Measure":  {
+                                                                                                                         "Expression":  {
+                                                                                                                                            "SourceRef":  {
+                                                                                                                                                              "Entity":  "BudgetMeasures"
+                                                                                                                                                          }
+                                                                                                                                        },
+                                                                                                                         "Property":  "Encumbrance Amount"
+                                                                                                                     }
+                                                                                                     },
+                                                                                           "queryRef":  "BudgetMeasures.Encumbrance Amount",
+                                                                                           "nativeQueryRef":  "Encumbrance Amount",
+                                                                                           "displayName":  "Encumbrance Amount"
+                                                                                       },
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Measure":  {
+                                                                                                                         "Expression":  {
+                                                                                                                                            "SourceRef":  {
+                                                                                                                                                              "Entity":  "BudgetMeasures"
+                                                                                                                                                          }
+                                                                                                                                        },
+                                                                                                                         "Property":  "Expense Amount"
+                                                                                                                     }
+                                                                                                     },
+                                                                                           "queryRef":  "BudgetMeasures.Expense Amount",
+                                                                                           "nativeQueryRef":  "Expense Amount",
+                                                                                           "displayName":  "Expense Amount"
+                                                                                       },
+                                                                                       {
+                                                                                           "field":  {
+                                                                                                         "Measure":  {
+                                                                                                                         "Expression":  {
+                                                                                                                                            "SourceRef":  {
+                                                                                                                                                              "Entity":  "BudgetMeasures"
+                                                                                                                                                          }
+                                                                                                                                        },
+                                                                                                                         "Property":  "Available Amount"
+                                                                                                                     }
+                                                                                                     },
+                                                                                           "queryRef":  "BudgetMeasures.Available Amount",
+                                                                                           "nativeQueryRef":  "Available Amount",
+                                                                                           "displayName":  "Available Amount"
+                                                                                       }
+                                                                                   ]
+                                                               }
+                                                }
+                             },
+                   "visualContainerObjects":  {
+                                                  "title":  [
+                                                                {
+                                                                    "properties":  {
+                                                                                       "text":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "\u0027Matched PO Line / Availability Detail\u0027"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                },
+                                                                                       "show":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "true"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                }
+                                                                                   }
+                                                                }
+                                                            ]
+                                              }
+               }
+}

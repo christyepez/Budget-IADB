@@ -80,8 +80,8 @@ table Encumbrance
 		mode: import
 		source =
 				let
-					SourcePath = "C:\Users\chris\OneDrive\Paneles\Budget_PowerBI.xlsx",
-					Workbook = Excel.Workbook(File.Contents(SourcePath), null, true),
+					SourceUrl = "https://d.docs.live.net/eb1a13bb642143af/Paneles/Budget_PowerBI.xlsx",
+					Workbook = Excel.Workbook(Web.Contents(SourceUrl), null, true),
 					Raw = Workbook{[Item="Encumbrance",Kind="Sheet"]}[Data],
 					Headers = Table.PromoteHeaders(Raw, [PromoteAllScalars=true]),
 					Selected = Table.SelectColumns(Headers, {"BUSINESS_UNIT","PO_ID","BUDGET_DT","VENDOR_ID","NAME1","LINE_NBR","DESCRIPTION","PO_STATUS","MERCHANDISE_AMT","currency_cd","buyer_id"}),

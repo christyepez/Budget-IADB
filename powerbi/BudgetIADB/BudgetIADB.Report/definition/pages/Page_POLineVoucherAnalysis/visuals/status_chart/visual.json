@@ -1,0 +1,110 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+    "name":  "status_chart",
+    "position":  {
+                     "x":  720,
+                     "y":  620,
+                     "z":  0,
+                     "height":  235,
+                     "width":  700,
+                     "tabOrder":  0
+                 },
+    "visual":  {
+                   "visualType":  "clusteredColumnChart",
+                   "query":  {
+                                 "queryState":  {
+                                                    "Category":  {
+                                                                     "projections":  [
+                                                                                         {
+                                                                                             "field":  {
+                                                                                                           "Column":  {
+                                                                                                                          "Expression":  {
+                                                                                                                                             "SourceRef":  {
+                                                                                                                                                               "Entity":  "DimPOLine"
+                                                                                                                                                           }
+                                                                                                                                         },
+                                                                                                                          "Property":  "PO_STATUS"
+                                                                                                                      }
+                                                                                                       },
+                                                                                             "queryRef":  "DimPOLine.PO_STATUS",
+                                                                                             "nativeQueryRef":  "PO_STATUS",
+                                                                                             "active":  true,
+                                                                                             "displayName":  "PO Status"
+                                                                                         }
+                                                                                     ]
+                                                                 },
+                                                    "Y":  {
+                                                              "projections":  [
+                                                                                  {
+                                                                                      "field":  {
+                                                                                                    "Measure":  {
+                                                                                                                    "Expression":  {
+                                                                                                                                       "SourceRef":  {
+                                                                                                                                                         "Entity":  "BudgetMeasures"
+                                                                                                                                                     }
+                                                                                                                                   },
+                                                                                                                    "Property":  "Encumbrance Amount"
+                                                                                                                }
+                                                                                                },
+                                                                                      "queryRef":  "BudgetMeasures.Encumbrance Amount",
+                                                                                      "nativeQueryRef":  "Encumbrance Amount",
+                                                                                      "displayName":  "Encumbrance Amount"
+                                                                                  },
+                                                                                  {
+                                                                                      "field":  {
+                                                                                                    "Measure":  {
+                                                                                                                    "Expression":  {
+                                                                                                                                       "SourceRef":  {
+                                                                                                                                                         "Entity":  "BudgetMeasures"
+                                                                                                                                                     }
+                                                                                                                                   },
+                                                                                                                    "Property":  "Expense Amount"
+                                                                                                                }
+                                                                                                },
+                                                                                      "queryRef":  "BudgetMeasures.Expense Amount",
+                                                                                      "nativeQueryRef":  "Expense Amount",
+                                                                                      "displayName":  "Expense Amount"
+                                                                                  },
+                                                                                  {
+                                                                                      "field":  {
+                                                                                                    "Measure":  {
+                                                                                                                    "Expression":  {
+                                                                                                                                       "SourceRef":  {
+                                                                                                                                                         "Entity":  "BudgetMeasures"
+                                                                                                                                                     }
+                                                                                                                                   },
+                                                                                                                    "Property":  "Available Amount"
+                                                                                                                }
+                                                                                                },
+                                                                                      "queryRef":  "BudgetMeasures.Available Amount",
+                                                                                      "nativeQueryRef":  "Available Amount",
+                                                                                      "displayName":  "Available Amount"
+                                                                                  }
+                                                                              ]
+                                                          }
+                                                }
+                             },
+                   "visualContainerObjects":  {
+                                                  "title":  [
+                                                                {
+                                                                    "properties":  {
+                                                                                       "text":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "\u0027Budget Position by PO Status\u0027"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                },
+                                                                                       "show":  {
+                                                                                                    "expr":  {
+                                                                                                                 "Literal":  {
+                                                                                                                                 "Value":  "true"
+                                                                                                                             }
+                                                                                                             }
+                                                                                                }
+                                                                                   }
+                                                                }
+                                                            ]
+                                              }
+               }
+}
