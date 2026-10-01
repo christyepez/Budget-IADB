@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "overspent_lines",
   "position": {
-    "x": 1315,
-    "y": 155,
-    "z": 0,
-    "height": 170,
-    "width": 105,
-    "tabOrder": 0
+    "x": 1200.447947350264,
+    "y": 156.31876442958364,
+    "z": 10000,
+    "height": 108.22068306663483,
+    "width": 160.32693787649603,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "card",
@@ -48,7 +48,47 @@
             "show": {
               "expr": {
                 "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "expense",
   "position": {
-    "x": 700,
-    "y": 155,
-    "z": 0,
-    "height": 170,
-    "width": 170,
-    "tabOrder": 0
+    "x": 699.426266486214,
+    "y": 154.31467770612744,
+    "z": 7000,
+    "height": 110.22476979009103,
+    "width": 170.34737149377705,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "card",
@@ -48,7 +48,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }

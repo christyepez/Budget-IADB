@@ -4,5 +4,6 @@
   "displayName": "PO Budget Overview",
   "displayOption": "FitToPage",
   "height": 900,
-  "width": 1440
+  "width": 1440,
+  "visibility": "HiddenInViewMode"
 }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "budget_date_slicer",
   "position": {
-    "x": 1140,
-    "y": 70,
-    "z": 0,
+    "x": 1006.0515351750126,
+    "y": 66.134861874054621,
+    "z": 1000,
     "height": 65,
     "width": 280,
-    "tabOrder": 0
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",

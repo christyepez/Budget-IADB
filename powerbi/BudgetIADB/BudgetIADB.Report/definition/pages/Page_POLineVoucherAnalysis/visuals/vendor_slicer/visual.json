@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "vendor_slicer",
   "position": {
-    "x": 560,
-    "y": 70,
-    "z": 0,
-    "height": 65,
-    "width": 300,
-    "tabOrder": 0
+    "x": 464.94811984183849,
+    "y": 66.134861874054621,
+    "z": 17000,
+    "height": 64.13077515059841,
+    "width": 300.61300851843009,
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "slicer",
@@ -27,13 +27,41 @@
                 }
               },
               "queryRef": "Encumbrance.NAME1",
-              "nativeQueryRef": "NAME1",
+              "nativeQueryRef": "Vendor",
               "active": true,
-              "displayName": "NAME1"
+              "displayName": "Vendor"
             }
           ]
         }
       }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "title": [
@@ -50,6 +78,46 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

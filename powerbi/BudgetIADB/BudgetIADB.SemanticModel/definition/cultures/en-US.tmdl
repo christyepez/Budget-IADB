@@ -2,10 +2,10 @@ cultureInfo en-US
 
 	linguisticMetadata =
 			{
-			  "Version": "2.0.0",
+			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
-			    "budgetmeasures.available_amount": {
+			    "budget_measure.available_amount": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "BudgetMeasures",
@@ -15,18 +15,83 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Available Amount": {
+			          "available amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "available quantity": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "available volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "available expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "available extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "available sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "available total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "available aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
 			          }
 			        }
 			      ]
 			    },
-			    "budgetmeasures.encumbrance_amount": {
+			    "budget_measure.encumbrance_amount": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "BudgetMeasures",
@@ -36,18 +101,83 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Encumbrance Amount": {
+			          "encumbrance amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "encumbrance quantity": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "encumbrance volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "encumbrance expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "encumbrance extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "encumbrance sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "encumbrance total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "encumbrance aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
 			          }
 			        }
 			      ]
 			    },
-			    "budgetmeasures.spend_": {
+			    "budget_measure.spend_": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "BudgetMeasures",
@@ -57,18 +187,33 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Spend %": {
+			          "spend %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "spend percentage": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "spend pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "budgetmeasures.expense_amount": {
+			    "budget_measure.expense_amount": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "BudgetMeasures",
@@ -78,18 +223,83 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Expense Amount": {
+			          "expense amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "expense quantity": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "expense total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "expense aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
 			          }
 			        }
 			      ]
 			    },
-			    "budgetmeasures.voucher_count": {
+			    "budget_measure.voucher_count": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "BudgetMeasures",
@@ -99,13 +309,18 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Voucher Count": {
+			          "voucher count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "voucher amount": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -121,12 +336,60 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "PO_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "po id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "po": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "po identification": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -142,17 +405,19 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "LINE_NBR": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "line nbr": {
+			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "encumbrance.name1": {
+			    "encumbrance.name_1": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Encumbrance",
@@ -163,12 +428,54 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "NAME1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "name 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nickname 1": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "title 1": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "label 1": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "tag 1": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        },
 			        {
@@ -193,13 +500,78 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "DESCRIPTION": {
+			          "description": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "appearance": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "descriptor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "specification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overview": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "report": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        }
 			      ]
@@ -215,12 +587,14 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "MERCHANDISE_AMT": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "merchandise amt": {
+			            "State": "Generated"
 			          }
 			        }
 			      ]
@@ -236,27 +610,125 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "PO_STATUS": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "PO Status": {
+			          "po status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "po category": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "po condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "po class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "dimpoline.line_nbr": {
+			    "dim_PO_line.line_nbr": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "DimPOLine",
@@ -267,17 +739,19 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "LINE_NBR": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "line nbr": {
+			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "dimpoline.po_id": {
+			    "dim_PO_line.po_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "DimPOLine",
@@ -288,17 +762,65 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "PO_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "po id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "po": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "po identification": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "expenses.po_id": {
+			    "expense.po_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Expenses",
@@ -309,17 +831,65 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "PO_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "po id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "po": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "po identification": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "po credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "expenses.line_nbr": {
+			    "expense.line_nbr": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Expenses",
@@ -330,17 +900,19 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "LINE_NBR": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "line nbr": {
+			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "expenses.vendor_id": {
+			    "expense.vendor_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Expenses",
@@ -351,17 +923,59 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "VENDOR_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "vendor id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vendor identification": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vendor identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vendor identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vendor credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "expenses.voucher_id": {
+			    "expense.voucher_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Expenses",
@@ -372,17 +986,115 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "VOUCHER_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "voucher id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "voucher": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "voucher identification": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "voucher identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "voucher identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "voucher credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "coupon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "chit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ticket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "receipt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "check": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
 			          }
 			        }
 			      ]
 			    },
-			    "expenses.invoice_id": {
+			    "expense.invoice_id": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Expenses",
@@ -393,17 +1105,105 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "INVOICE_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "invoice id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "invoice": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "invoice identification": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "invoice identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "invoice identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "invoice credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
 			          }
 			        }
 			      ]
 			    },
-			    "expenses.merchandise_amt": {
+			    "expense.merchandise_amt": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Expenses",
@@ -414,17 +1214,19 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "MERCHANDISE_AMT": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "merchandise amt": {
+			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "budgetmeasures.po_count": {
+			    "budget_measure.PO_count": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "BudgetMeasures",
@@ -434,13 +1236,18 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "PO Count": {
+			          "PO count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "po amount": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -456,15 +1263,60 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "BUDGET_DT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "budget dt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "dt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "account dt": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "cost dt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "finance dt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
 			    "encumbrance.business_unit": {
 			      "Definition": {
@@ -477,17 +1329,125 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "BUSINESS_UNIT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "business unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "business module": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "business element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "business entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "business group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "budgetmeasures.overspent_po_lines": {
+			    "budget_measure.overspent_PO_lines": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "BudgetMeasures",
@@ -497,16 +1457,3417 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Overspent PO Lines": {
+			          "overspent PO lines": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "lines": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PO lines": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "overspent po appearance": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "po appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "overspent po outline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "overspent po shape": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "po outline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "po shape": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "outline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "overspent po position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "overspent po rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
 			          }
 			        }
 			      ]
+			    },
+			    "encumbrance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "encumbrance": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.vendor_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "VENDOR_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vendor id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VENDOR_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "vendor identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vendor identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vendor identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vendor credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.currency_cd": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "currency_cd"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "currency cd": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "currency_cd": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cd": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "currency album": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "album": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "currency disk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "currency disc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "currency recording": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "disk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "disc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "recording": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.buyer_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "buyer_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "buyer id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "buyer_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "buyer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "buyer identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "buyer identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "buyer identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "buyer credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "encumbrance.PO_line_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Encumbrance",
+			          "ConceptualProperty": "POLineKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "PO line key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "POLineKey": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "line key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "po line solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "expense": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "expense": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "expenditure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "outlay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "outflow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "overhead": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "expense.business_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "BUSINESS_UNIT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "business unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BUSINESS_UNIT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "business module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "business element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "business entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "business group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "expense.entry_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "ENTRY_STATUS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entry status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ENTRY_STATUS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "entry category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "entry importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "entry prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "entry prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "entry condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "entry class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "expense.invoice_dt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "INVOICE_DT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invoice dt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "INVOICE_DT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "dt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "expense.accounting_dt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "ACCOUNTING_DT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "accounting dt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ACCOUNTING_DT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "dt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "expense.voucher_line_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "VOUCHER_LINE_NUM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "voucher line num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VOUCHER_LINE_NUM": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "voucher line number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "expense.budget_dt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "BUDGET_DT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "budget dt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BUDGET_DT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "dt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "account dt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "cost dt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "finance dt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "expense.PO_line_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Expenses",
+			          "ConceptualProperty": "POLineKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "PO line key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "POLineKey": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "line key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "po line solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_PO_line": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimPOLine"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim PO line": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DimPOLine": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "PO line": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim po streak": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "dim po stroke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "dim po stripe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "dim po contour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "dim po mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "po streak": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "po stroke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "po stripe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "po contour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "po mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "dim_PO_line.PO_line_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimPOLine",
+			          "ConceptualProperty": "POLineKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PO line key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "POLineKey": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "line key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "po line solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "po line resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_PO_line.business_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimPOLine",
+			          "ConceptualProperty": "BUSINESS_UNIT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "business unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BUSINESS_UNIT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "business module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "business element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "business entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "business group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "business item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "budget_measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "budget measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BudgetMeasures": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "measure": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "account measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "cost measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "finance measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "budget degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "budget quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "budget quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "budget extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "budget_measure.dummy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Dummy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dummy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "imitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mock": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "replica": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mannequin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "model": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "budget_measure.overspend_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BudgetMeasures",
+			          "ConceptualProperty": "Overspend Amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "overspend amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "overspend quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "overspend volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "overspend expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "overspend extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "overspend sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "overspend total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "overspend aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "encumbrance_name_1_Vend_encumbrance": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance.name_1": {
+			          "Target": {
+			            "Entity": "encumbrance.name_1"
+			          }
+			        },
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "encumbrance.name_1"
+			            },
+			            "Verbs": [
+			              {
+			                "Vend": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "encumbrance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "NAME1_Vend_encumbrances"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance.name_1"
+			            },
+			            "Object": {
+			              "Role": "encumbrance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "NAME1_have_encumbrances"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.name_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_NAME1"
+			        }
+			      ]
+			    },
+			    "encumbrance_buyer_id_buy_encumbrance": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance.buyer_id": {
+			          "Target": {
+			            "Entity": "encumbrance.buyer_id"
+			          }
+			        },
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "encumbrance.buyer_id"
+			            },
+			            "Verbs": [
+			              {
+			                "buy": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "encumbrance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "buyer_ids_buy_encumbrances"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance.buyer_id"
+			            },
+			            "Object": {
+			              "Role": "encumbrance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "buyer_ids_have_encumbrances"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.buyer_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_buyer_ids"
+			        }
+			      ]
+			    },
+			    "encumbrance_is_expensive": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.merchandise_amt": {
+			          "Target": {
+			            "Entity": "encumbrance.merchandise_amt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "encumbrance.merchandise_amt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "MERCHANDISE_AMT_indicates_how_expensive_encumbrances_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.merchandise_amt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_MERCHANDISE_AMTs"
+			        }
+			      ]
+			    },
+			    "expense_is_expensive": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.merchandise_amt": {
+			          "Target": {
+			            "Entity": "expense.merchandise_amt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "expense.merchandise_amt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "MERCHANDISE_AMT_indicates_how_expensive_expenses_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.merchandise_amt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_MERCHANDISE_AMTs"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_budget_measure_available_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "budget_measure.available_amount": {
+			          "Target": {
+			            "Entity": "budget_measure.available_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.available_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_available_amount"
+			        }
+			      ]
+			    },
+			    "expense_has_budget_measure_available_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "budget_measure.available_amount": {
+			          "Target": {
+			            "Entity": "budget_measure.available_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.available_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_available_amount"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_budget_measure_encumbrance_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "budget_measure.encumbrance_amount": {
+			          "Target": {
+			            "Entity": "budget_measure.encumbrance_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.encumbrance_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_encumbrance_amount"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_budget_measure_spend_": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "budget_measure.spend_": {
+			          "Target": {
+			            "Entity": "budget_measure.spend_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.spend_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_spend_"
+			        }
+			      ]
+			    },
+			    "expense_has_budget_measure_spend_": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "budget_measure.spend_": {
+			          "Target": {
+			            "Entity": "budget_measure.spend_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.spend_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_spend_"
+			        }
+			      ]
+			    },
+			    "expense_has_budget_measure_expense_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "budget_measure.expense_amount": {
+			          "Target": {
+			            "Entity": "budget_measure.expense_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.expense_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_expense_amount"
+			        }
+			      ]
+			    },
+			    "expense_has_budget_measure_voucher_count": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "budget_measure.voucher_count": {
+			          "Target": {
+			            "Entity": "budget_measure.voucher_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.voucher_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_voucher_count"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_po_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.po_id": {
+			          "Target": {
+			            "Entity": "encumbrance.po_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.po_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_PO_IDs"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_line_nbr": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.line_nbr": {
+			          "Target": {
+			            "Entity": "encumbrance.line_nbr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.line_nbr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_LINE_NBRs"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_description": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.description": {
+			          "Target": {
+			            "Entity": "encumbrance.description"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.description"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_descriptions"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_po_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.po_status": {
+			          "Target": {
+			            "Entity": "encumbrance.po_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.po_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_PO_STATUSes"
+			        }
+			      ]
+			    },
+			    "dim_PO_line_has_line_nbr": {
+			      "Binding": {
+			        "ConceptualEntity": "DimPOLine"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        },
+			        "dim_PO_line.line_nbr": {
+			          "Target": {
+			            "Entity": "dim_PO_line.line_nbr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "dim_PO_line.line_nbr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_LINE_NBRs"
+			        }
+			      ]
+			    },
+			    "dim_PO_line_has_po_id": {
+			      "Binding": {
+			        "ConceptualEntity": "DimPOLine"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        },
+			        "dim_PO_line.po_id": {
+			          "Target": {
+			            "Entity": "dim_PO_line.po_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "dim_PO_line.po_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_PO_IDs"
+			        }
+			      ]
+			    },
+			    "expense_has_po_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.po_id": {
+			          "Target": {
+			            "Entity": "expense.po_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.po_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_PO_IDs"
+			        }
+			      ]
+			    },
+			    "expense_has_line_nbr": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.line_nbr": {
+			          "Target": {
+			            "Entity": "expense.line_nbr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.line_nbr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_LINE_NBRs"
+			        }
+			      ]
+			    },
+			    "expense_has_vendor_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.vendor_id": {
+			          "Target": {
+			            "Entity": "expense.vendor_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.vendor_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_VENDOR_IDs"
+			        }
+			      ]
+			    },
+			    "expense_has_voucher_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.voucher_id": {
+			          "Target": {
+			            "Entity": "expense.voucher_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.voucher_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_VOUCHER_IDs"
+			        }
+			      ]
+			    },
+			    "expense_has_invoice_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.invoice_id": {
+			          "Target": {
+			            "Entity": "expense.invoice_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.invoice_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_INVOICE_IDs"
+			        }
+			      ]
+			    },
+			    "dim_PO_line_has_budget_measure_PO_count": {
+			      "Binding": {
+			        "ConceptualEntity": "DimPOLine"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        },
+			        "budget_measure.PO_count": {
+			          "Target": {
+			            "Entity": "budget_measure.PO_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.PO_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_PO_count"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_budget_dt": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.budget_dt": {
+			          "Target": {
+			            "Entity": "encumbrance.budget_dt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.budget_dt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_BUDGET_DTs"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_business_unit": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.business_unit": {
+			          "Target": {
+			            "Entity": "encumbrance.business_unit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.business_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_BUSINESS_UNITs"
+			        }
+			      ]
+			    },
+			    "dim_PO_line_has_budget_measure_overspent_PO_lines": {
+			      "Binding": {
+			        "ConceptualEntity": "DimPOLine"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        },
+			        "budget_measure.overspent_PO_lines": {
+			          "Target": {
+			            "Entity": "budget_measure.overspent_PO_lines"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.overspent_PO_lines"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_overspent_PO_lines"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_vendor_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.vendor_id": {
+			          "Target": {
+			            "Entity": "encumbrance.vendor_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.vendor_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_vendor_ids"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_currency_cd": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "encumbrance.currency_cd": {
+			          "Target": {
+			            "Entity": "encumbrance.currency_cd"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "encumbrance.currency_cd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_currency_cd"
+			        }
+			      ]
+			    },
+			    "expense_has_business_unit": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.business_unit": {
+			          "Target": {
+			            "Entity": "expense.business_unit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.business_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_business_units"
+			        }
+			      ]
+			    },
+			    "expense_has_entry_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.entry_status": {
+			          "Target": {
+			            "Entity": "expense.entry_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.entry_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_entry_statuses"
+			        }
+			      ]
+			    },
+			    "expense_has_invoice_dt": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.invoice_dt": {
+			          "Target": {
+			            "Entity": "expense.invoice_dt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.invoice_dt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_invoice_dts"
+			        }
+			      ]
+			    },
+			    "expense_has_accounting_dt": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.accounting_dt": {
+			          "Target": {
+			            "Entity": "expense.accounting_dt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.accounting_dt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_accounting_dts"
+			        }
+			      ]
+			    },
+			    "expense_has_voucher_line_num": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.voucher_line_num": {
+			          "Target": {
+			            "Entity": "expense.voucher_line_num"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.voucher_line_num"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_voucher_line_nums"
+			        }
+			      ]
+			    },
+			    "expense_has_budget_dt": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "expense.budget_dt": {
+			          "Target": {
+			            "Entity": "expense.budget_dt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "expense.budget_dt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_budget_dts"
+			        }
+			      ]
+			    },
+			    "dim_PO_line_has_PO_line_key": {
+			      "Binding": {
+			        "ConceptualEntity": "DimPOLine"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        },
+			        "dim_PO_line.PO_line_key": {
+			          "Target": {
+			            "Entity": "dim_PO_line.PO_line_key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "dim_PO_line.PO_line_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_PO_line_keys"
+			        }
+			      ]
+			    },
+			    "dim_PO_line_has_business_unit": {
+			      "Binding": {
+			        "ConceptualEntity": "DimPOLine"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        },
+			        "dim_PO_line.business_unit": {
+			          "Target": {
+			            "Entity": "dim_PO_line.business_unit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "dim_PO_line.business_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_business_units"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_budget_measure_overspend_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "budget_measure.overspend_amount": {
+			          "Target": {
+			            "Entity": "budget_measure.overspend_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.overspend_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_overspend_amount"
+			        }
+			      ]
+			    },
+			    "expense_has_budget_measure_overspend_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "budget_measure.overspend_amount": {
+			          "Target": {
+			            "Entity": "budget_measure.overspend_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "budget_measure.overspend_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_overspend_amount"
+			        }
+			      ]
+			    },
+			    "encumbrance_has_dim_PO_line": {
+			      "Binding": {
+			        "ConceptualEntity": "Encumbrance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "encumbrance": {
+			          "Target": {
+			            "Entity": "encumbrance"
+			          }
+			        },
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "encumbrance"
+			            },
+			            "Object": {
+			              "Role": "dim_PO_line"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "encumbrances_have_dim_PO_lines"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "encumbrance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_encumbrances"
+			        }
+			      ]
+			    },
+			    "expense_has_dim_PO_line": {
+			      "Binding": {
+			        "ConceptualEntity": "Expenses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "expense": {
+			          "Target": {
+			            "Entity": "expense"
+			          }
+			        },
+			        "dim_PO_line": {
+			          "Target": {
+			            "Entity": "dim_PO_line"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "expense"
+			            },
+			            "Object": {
+			              "Role": "dim_PO_line"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "expenses_have_dim_PO_lines"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_PO_line"
+			            },
+			            "Object": {
+			              "Role": "expense"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_PO_lines_have_expenses"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
 			    }
 			  }
 			}
