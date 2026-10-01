@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "execution",
+  "position": {
+    "x": 20,
+    "y": 255,
+    "z": 0,
+    "width": 220,
+    "height": 190,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Expense Amount"
+                }
+              },
+              "queryRef": "BudgetMeasures.Expense Amount",
+              "nativeQueryRef": "Expense Amount",
+              "displayName": "Expense Amount"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Available Amount"
+                }
+              },
+              "queryRef": "BudgetMeasures.Available Amount",
+              "nativeQueryRef": "Available Amount",
+              "displayName": "Available Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Execution'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": []
+  }
+}

@@ -1,0 +1,102 @@
+table Expenses
+	lineageTag: 9c5e2a45-1da2-4c4c-b0ac-f0c2641ce052
+
+	column BUSINESS_UNIT
+		dataType: string
+		lineageTag: 6365ddea-c855-4d46-90b4-f1fd0deebf79
+		summarizeBy: none
+		sourceColumn: BUSINESS_UNIT
+
+	column PO_ID
+		dataType: string
+		lineageTag: 8c420643-a6c4-42dc-a299-40f067a99ffa
+		summarizeBy: none
+		sourceColumn: PO_ID
+
+	column VENDOR_ID
+		dataType: int64
+		lineageTag: b353b69a-82c0-4cea-b261-8f50de5ae0a6
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+	column LINE_NBR
+		dataType: int64
+		lineageTag: 94a6bdf8-9a36-4405-aec1-a8f646b0d2b7
+		summarizeBy: none
+		sourceColumn: LINE_NBR
+
+	column INVOICE_ID
+		dataType: string
+		lineageTag: 946164e0-22c5-4abe-b4d0-cfa487f23e15
+		summarizeBy: none
+		sourceColumn: INVOICE_ID
+
+	column VOUCHER_ID
+		dataType: string
+		lineageTag: 3ba03e00-c943-4091-a0d2-b5fbb7450fca
+		summarizeBy: none
+		sourceColumn: VOUCHER_ID
+
+	column ENTRY_STATUS
+		dataType: string
+		lineageTag: f48a6915-37aa-4e3e-b6a5-714c7bee8f51
+		summarizeBy: none
+		sourceColumn: ENTRY_STATUS
+
+	column INVOICE_DT
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 373130a9-9d4f-4bb4-97db-40b9190ad48d
+		summarizeBy: none
+		sourceColumn: INVOICE_DT
+
+	column ACCOUNTING_DT
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 722268ce-f99e-4d65-a42e-90e861214ab1
+		summarizeBy: none
+		sourceColumn: ACCOUNTING_DT
+
+	column VOUCHER_LINE_NUM
+		dataType: int64
+		lineageTag: c2bafb67-fcfd-4fe2-899b-9c2c2532d14f
+		summarizeBy: none
+		sourceColumn: VOUCHER_LINE_NUM
+
+	column MERCHANDISE_AMT
+		dataType: decimal
+		formatString: $#,##0.00
+		lineageTag: 913092f4-11cc-4afd-aefe-b5a68ac1eaf7
+		summarizeBy: sum
+		sourceColumn: MERCHANDISE_AMT
+
+	column BUDGET_DT
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: f87339cd-6c92-4f5a-9cfb-1167c84fb994
+		summarizeBy: none
+		sourceColumn: BUDGET_DT
+
+	column POLineKey
+		dataType: string
+		isHidden
+		lineageTag: 3e08cbd3-d258-4a9d-a151-881bbfe4abd0
+		summarizeBy: none
+		sourceColumn: POLineKey
+
+	partition Expenses = m
+		mode: import
+		source =
+				let
+					SourcePath = "C:\Users\chris\OneDrive\Paneles\Budget_PowerBI.xlsx",
+					Workbook = Excel.Workbook(File.Contents(SourcePath), null, true),
+					Raw = Workbook{[Item="Expenses",Kind="Sheet"]}[Data],
+					Headers = Table.PromoteHeaders(Raw, [PromoteAllScalars=true]),
+					Selected = Table.SelectColumns(Headers, {"BUSINESS_UNIT","PO_ID","VENDOR_ID","LINE_NBR","INVOICE_ID","VOUCHER_ID","ENTRY_STATUS","INVOICE_DT","ACCOUNTING_DT","VOUCHER_LINE_NUM","MERCHANDISE_AMT","BUDGET_DT"}),
+					NonBlank = Table.SelectRows(Selected, each [PO_ID] <> null and Text.Trim(Text.From([PO_ID])) <> ""),
+					Typed = Table.TransformColumnTypes(NonBlank, {{"BUSINESS_UNIT", type text},{"PO_ID", type text},{"VENDOR_ID", Int64.Type},{"LINE_NBR", Int64.Type},{"INVOICE_ID", type text},{"VOUCHER_ID", type text},{"ENTRY_STATUS", type text},{"INVOICE_DT", type datetime},{"ACCOUNTING_DT", type datetime},{"VOUCHER_LINE_NUM", Int64.Type},{"MERCHANDISE_AMT", Currency.Type},{"BUDGET_DT", type datetime}}),
+					Normalized = Table.TransformColumns(Typed, {{"BUSINESS_UNIT", each Text.Trim(Text.From(_)), type text},{"PO_ID", each Text.PadStart(Text.Trim(Text.From(_)),10,"0"), type text}}),
+					AddKey = Table.AddColumn(Normalized, "POLineKey", each [BUSINESS_UNIT] & "|" & [PO_ID] & "|" & Text.PadStart(Text.From([LINE_NBR]),6,"0"), type text)
+				in
+					AddKey
+

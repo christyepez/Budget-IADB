@@ -1,0 +1,94 @@
+table Encumbrance
+	lineageTag: 4f8f7e3d-8e10-49c1-83a8-8997d28a08b5
+
+	column BUSINESS_UNIT
+		dataType: string
+		lineageTag: 89192f82-fa71-4922-903b-7572d55c1f13
+		summarizeBy: none
+		sourceColumn: BUSINESS_UNIT
+
+	column PO_ID
+		dataType: string
+		lineageTag: 538220db-32b0-4f3e-8516-95ebd5653979
+		summarizeBy: none
+		sourceColumn: PO_ID
+
+	column BUDGET_DT
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 6a703f9a-cd26-400d-ad3c-e90307fd36a8
+		summarizeBy: none
+		sourceColumn: BUDGET_DT
+
+	column VENDOR_ID
+		dataType: int64
+		lineageTag: aed09066-d0d8-4123-ace6-bafa11d097d3
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+	column NAME1
+		dataType: string
+		lineageTag: cadb80c8-32f5-4190-ac8c-9e672b99a895
+		summarizeBy: none
+		sourceColumn: NAME1
+
+	column LINE_NBR
+		dataType: int64
+		lineageTag: 67aa0ef3-bb81-4afb-854b-ea06f1240d34
+		summarizeBy: none
+		sourceColumn: LINE_NBR
+
+	column DESCRIPTION
+		dataType: string
+		lineageTag: 4d47693a-e182-46a2-9470-5f86975aa034
+		summarizeBy: none
+		sourceColumn: DESCRIPTION
+
+	column PO_STATUS
+		dataType: string
+		lineageTag: 4c125452-1b3e-4ca2-a725-6e2721a886b8
+		summarizeBy: none
+		sourceColumn: PO_STATUS
+
+	column MERCHANDISE_AMT
+		dataType: decimal
+		formatString: $#,##0.00
+		lineageTag: 2e5457ba-dda2-4c59-894b-384f4413b168
+		summarizeBy: sum
+		sourceColumn: MERCHANDISE_AMT
+
+	column currency_cd
+		dataType: string
+		lineageTag: 1bb9fe93-9751-4560-bccc-0bebfbad954f
+		summarizeBy: none
+		sourceColumn: currency_cd
+
+	column buyer_id
+		dataType: string
+		lineageTag: 9c311a24-ce8e-4a98-8a22-f9d0ea92a498
+		summarizeBy: none
+		sourceColumn: buyer_id
+
+	column POLineKey
+		dataType: string
+		isHidden
+		lineageTag: 17903fb7-30e2-482a-812a-7e20692bcfd1
+		summarizeBy: none
+		sourceColumn: POLineKey
+
+	partition Encumbrance = m
+		mode: import
+		source =
+				let
+					SourcePath = "C:\Users\chris\OneDrive\Paneles\Budget_PowerBI.xlsx",
+					Workbook = Excel.Workbook(File.Contents(SourcePath), null, true),
+					Raw = Workbook{[Item="Encumbrance",Kind="Sheet"]}[Data],
+					Headers = Table.PromoteHeaders(Raw, [PromoteAllScalars=true]),
+					Selected = Table.SelectColumns(Headers, {"BUSINESS_UNIT","PO_ID","BUDGET_DT","VENDOR_ID","NAME1","LINE_NBR","DESCRIPTION","PO_STATUS","MERCHANDISE_AMT","currency_cd","buyer_id"}),
+					NonBlank = Table.SelectRows(Selected, each [PO_ID] <> null and Text.Trim(Text.From([PO_ID])) <> ""),
+					Typed = Table.TransformColumnTypes(NonBlank, {{"BUSINESS_UNIT", type text},{"PO_ID", type text},{"BUDGET_DT", type datetime},{"VENDOR_ID", Int64.Type},{"NAME1", type text},{"LINE_NBR", Int64.Type},{"DESCRIPTION", type text},{"PO_STATUS", type text},{"MERCHANDISE_AMT", Currency.Type},{"currency_cd", type text},{"buyer_id", type text}}),
+					Normalized = Table.TransformColumns(Typed, {{"BUSINESS_UNIT", each Text.Trim(Text.From(_)), type text},{"PO_ID", each Text.PadStart(Text.Trim(Text.From(_)),10,"0"), type text}}),
+					AddKey = Table.AddColumn(Normalized, "POLineKey", each [BUSINESS_UNIT] & "|" & [PO_ID] & "|" & Text.PadStart(Text.From([LINE_NBR]),6,"0"), type text)
+				in
+					AddKey
+

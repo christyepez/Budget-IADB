@@ -1,0 +1,38 @@
+table BudgetMeasures
+	lineageTag: 177594cf-5bbe-4fca-9a2e-d7b0158f33d3
+
+	measure 'Encumbrance Amount' = SUM(Encumbrance[MERCHANDISE_AMT])
+		formatString: $#,##0.00
+		lineageTag: 850c1233-1081-47ff-a2dd-62cb4da7f47f
+
+	measure 'Expense Amount' = SUM(Expenses[MERCHANDISE_AMT])
+		formatString: $#,##0.00
+		lineageTag: 4e0f0a0f-d2d4-4711-9ca4-af98a1065117
+
+	measure 'Available Amount' = [Encumbrance Amount] - [Expense Amount]
+		formatString: $#,##0.00
+		lineageTag: 06acc050-bee6-40ce-836b-72c8564e5451
+
+	measure 'Voucher Count' = DISTINCTCOUNT(Expenses[VOUCHER_ID])
+		formatString: #,##0
+		lineageTag: 17b90036-17a4-404c-a66b-944f92091c2d
+
+	measure 'Spend %' = DIVIDE([Expense Amount], [Encumbrance Amount])
+		formatString: 0.00%
+		lineageTag: 7c062909-e294-42bc-bd44-9e47403196ad
+
+	measure 'Overspend Amount' = MAX(0, -[Available Amount])
+		formatString: $#,##0.00
+		lineageTag: 5109a6d4-573c-4aae-abc6-b4a827f386d9
+
+	column Dummy
+		dataType: int64
+		isHidden
+		lineageTag: 63637fda-e4f8-4382-ae01-d4e306b2288f
+		summarizeBy: none
+		sourceColumn: [Dummy]
+
+	partition BudgetMeasures = calculated
+		mode: import
+		source = ROW("Dummy", 1)
+

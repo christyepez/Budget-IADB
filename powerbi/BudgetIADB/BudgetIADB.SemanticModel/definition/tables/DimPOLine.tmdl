@@ -1,0 +1,48 @@
+table DimPOLine
+	lineageTag: 95740e93-ee36-4047-8a09-2a36691d8e95
+
+	column POLineKey
+		dataType: string
+		lineageTag: f9d18e23-1dfa-44f3-811a-588cf1b6a1a2
+		summarizeBy: none
+		sourceColumn: POLineKey
+
+	column BUSINESS_UNIT
+		dataType: string
+		lineageTag: a93c4cd4-cb42-4f58-95fb-26cc5e1eae76
+		summarizeBy: none
+		sourceColumn: BUSINESS_UNIT
+
+	column PO_ID
+		dataType: string
+		lineageTag: 5cfedbaa-9ec4-4abb-8303-2c5affdbd496
+		summarizeBy: none
+		sourceColumn: PO_ID
+
+	column LINE_NBR
+		dataType: int64
+		lineageTag: d08f1269-4a47-46dc-be35-dc954c6a57be
+		summarizeBy: none
+		sourceColumn: LINE_NBR
+
+	partition DimPOLine = m
+		mode: import
+		source =
+				let
+					SourcePath = "C:\Users\chris\OneDrive\Paneles\Budget_PowerBI.xlsx",
+					Workbook = Excel.Workbook(File.Contents(SourcePath), null, true),
+					EncRaw = Workbook{[Item="Encumbrance",Kind="Sheet"]}[Data],
+					EncHeaders = Table.PromoteHeaders(EncRaw, [PromoteAllScalars=true]),
+					EncSelected = Table.SelectColumns(EncHeaders, {"BUSINESS_UNIT","PO_ID","LINE_NBR"}),
+					ExpRaw = Workbook{[Item="Expenses",Kind="Sheet"]}[Data],
+					ExpHeaders = Table.PromoteHeaders(ExpRaw, [PromoteAllScalars=true]),
+					ExpSelected = Table.SelectColumns(ExpHeaders, {"BUSINESS_UNIT","PO_ID","LINE_NBR"}),
+					Combined = Table.Combine({EncSelected, ExpSelected}),
+					NonBlank = Table.SelectRows(Combined, each [PO_ID] <> null and Text.Trim(Text.From([PO_ID])) <> "" and [LINE_NBR] <> null),
+					Typed = Table.TransformColumnTypes(NonBlank, {{"BUSINESS_UNIT", type text},{"PO_ID", type text},{"LINE_NBR", Int64.Type}}),
+					Normalized = Table.TransformColumns(Typed, {{"BUSINESS_UNIT", each Text.Trim(Text.From(_)), type text},{"PO_ID", each Text.PadStart(Text.Trim(Text.From(_)),10,"0"), type text}}),
+					AddKey = Table.AddColumn(Normalized, "POLineKey", each [BUSINESS_UNIT] & "|" & [PO_ID] & "|" & Text.PadStart(Text.From([LINE_NBR]),6,"0"), type text),
+					DistinctRows = Table.Distinct(AddKey, {"POLineKey"})
+				in
+					DistinctRows
+

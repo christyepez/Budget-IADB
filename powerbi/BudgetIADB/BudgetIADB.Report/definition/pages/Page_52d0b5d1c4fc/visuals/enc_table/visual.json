@@ -1,0 +1,138 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "enc_table",
+  "position": {
+    "x": 720,
+    "y": 20,
+    "z": 0,
+    "width": 700,
+    "height": 210,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "table",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Encumbrance"
+                    }
+                  },
+                  "Property": "PO_ID"
+                }
+              },
+              "queryRef": "Encumbrance.PO_ID",
+              "nativeQueryRef": "PO_ID",
+              "displayName": "PO_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Encumbrance"
+                    }
+                  },
+                  "Property": "LINE_NBR"
+                }
+              },
+              "queryRef": "Encumbrance.LINE_NBR",
+              "nativeQueryRef": "LINE_NBR",
+              "displayName": "LINE_NBR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Encumbrance"
+                    }
+                  },
+                  "Property": "NAME1"
+                }
+              },
+              "queryRef": "Encumbrance.NAME1",
+              "nativeQueryRef": "NAME1",
+              "displayName": "NAME1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Encumbrance"
+                    }
+                  },
+                  "Property": "DESCRIPTION"
+                }
+              },
+              "queryRef": "Encumbrance.DESCRIPTION",
+              "nativeQueryRef": "DESCRIPTION",
+              "displayName": "DESCRIPTION"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Encumbrance"
+                    }
+                  },
+                  "Property": "MERCHANDISE_AMT"
+                }
+              },
+              "queryRef": "Encumbrance.MERCHANDISE_AMT",
+              "nativeQueryRef": "MERCHANDISE_AMT",
+              "displayName": "MERCHANDISE_AMT"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BudgetMeasures"
+                    }
+                  },
+                  "Property": "Available Amount"
+                }
+              },
+              "queryRef": "BudgetMeasures.Available Amount",
+              "nativeQueryRef": "Available Amount",
+              "displayName": "Available Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Purchase Order / Encumbrance Detail'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": []
+  }
+}

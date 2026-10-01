@@ -1,0 +1,10 @@
+relationship Encumbrance_POLine
+	crossFilteringBehavior: bothDirections
+	fromColumn: Encumbrance.POLineKey
+	toColumn: DimPOLine.POLineKey
+
+relationship Expenses_POLine
+	crossFilteringBehavior: bothDirections
+	fromColumn: Expenses.POLineKey
+	toColumn: DimPOLine.POLineKey
+
